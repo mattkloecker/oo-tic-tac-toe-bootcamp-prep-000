@@ -102,6 +102,14 @@ def over?
   won? || draw? || full?;
 end
 
+#return the winner
+def winner
+ won = won?
+  if won
+   return @board[won[0]]
+ end
+end
+
 #executes a turn
 def turn
         puts "Please enter 1-9:";
