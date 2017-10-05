@@ -31,10 +31,12 @@ class TicTacToe
     input=(input.to_i) - 1;
   end
 
-  #execute player move
+  #execute player move, given index of @board array and player's token
   def move(index, value = "X")
     return @board[index] = value
   end
+
+  
 
 
 
