@@ -60,7 +60,7 @@ def turn
         move(index, value);
         display_board();
       else
-        turn(board);
+        turn;
       end
 end
 
