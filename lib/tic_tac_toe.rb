@@ -124,6 +124,17 @@ def turn
       end
 end
 
+#call play until game is either a win or a draw
+def play
+  until over?
+    turn;
+  end
+  if draw?;
+    puts "Cat's Game!"
+  elsif won?;
+    puts "Congratulations #{winner(board)}!"
+  end
+end
 
 
 
