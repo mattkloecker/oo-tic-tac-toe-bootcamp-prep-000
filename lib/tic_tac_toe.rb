@@ -87,6 +87,11 @@ def won?
     return false
 end
 
+#check if the board is full
+def full?
+  !@board.find { |i| i == " " || i == ""}
+end
+
 
 #executes a turn
 def turn
