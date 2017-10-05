@@ -37,7 +37,7 @@ class TicTacToe
   end
 
   #check if requested position is taken or empty
-  def position_taken?(@board, index)
+  def position_taken?(index)
     !(@board[index].nil? || @board[index] == " ")
   end
 
