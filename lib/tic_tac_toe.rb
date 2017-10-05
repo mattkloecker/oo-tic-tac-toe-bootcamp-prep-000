@@ -42,10 +42,10 @@ class TicTacToe
   end
 
   #check if a move is valid
-def valid_move?(board, index)
-  if board[index] == "" || board[index] == " " && index.between?(0, 8)
+def valid_move?(index)
+  if @board[index] == "" || @board[index] == " " && index.between?(0, 8)
     return true
-  elsif board[index] == "X" || board[index] == "O"
+  elsif @board[index] == "X" || @board[index] == "O"
     return false
   end
 end
