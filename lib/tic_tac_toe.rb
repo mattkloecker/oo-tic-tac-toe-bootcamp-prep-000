@@ -136,14 +136,5 @@ def play
   end
 end
 
-
-
-
-
-
-
-
-
-
 #end of class TicTacToe
 end
