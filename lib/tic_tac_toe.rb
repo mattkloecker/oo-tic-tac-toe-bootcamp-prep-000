@@ -71,12 +71,12 @@ def current_player
 end
 
 #check if game has been won
-def won?(board)
+def won?
  WIN_COMBINATIONS.each do |win_index| #interates thru list of win combinations array
 
    x_win = win_index.all? do |spot| #interates thru individual win array
 
-     @board[spot] == "X"
+    @board[spot] == "X"
 
    end
 
