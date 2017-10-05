@@ -26,6 +26,10 @@ class TicTacToe
 
   end
 
+  #take player input convert to integer
+  def input_to_index(input)
+    input=(input.to_i) - 1;
+  end
 
 
 
