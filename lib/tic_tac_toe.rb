@@ -61,6 +61,14 @@ def turn_count
   counter
 end
 
+#check the current player
+def current_player
+  if turn_count(@board)&1==0 || turn_count(@board) == 0;
+    return "X"
+  else
+    return "O"
+  end
+end
 
 #executes a turn
 def turn
