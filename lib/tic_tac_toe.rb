@@ -92,6 +92,15 @@ def full?
   !@board.find { |i| i == " " || i == ""}
 end
 
+#check if the board is at a draw
+def draw?
+  !won?(@board) && full?(@board)
+end
+
+#check if the game is over (all spots full)
+def over?
+  won?(@board) || draw?(@board) || full?(@board);
+end
 
 #executes a turn
 def turn
