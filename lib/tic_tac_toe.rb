@@ -50,7 +50,19 @@ def valid_move?(index)
   end
 end
 
-
+#executes a turn
+def turn()
+        puts "Please enter 1-9:";
+        input = gets.strip;
+        index = input_to_index(input);
+        value = current_player()
+      if (valid_move?(index))
+        move(index, value);
+        display_board();
+      else
+        turn(board);
+      end
+end
 
 
 
@@ -64,3 +76,4 @@ end
 
 #end of class TicTacToe
 end
+
