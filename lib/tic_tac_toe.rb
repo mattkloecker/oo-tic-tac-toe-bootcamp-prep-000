@@ -31,7 +31,11 @@ class TicTacToe
     input=(input.to_i) - 1;
   end
 
-  
+  #execute player move
+  def move(@board, value = "X")
+    return @board = value
+  end
+
 
 
 
