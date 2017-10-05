@@ -17,6 +17,14 @@ class TicTacToe
     [2,4,6], #right diagonal win
   ]
 
+#displays the board 
+  def display_board(board="")
+    rows = [" #{board[0]} | #{board[1]} | #{board[2]} ",\
+    " #{board[3]} | #{board[4]} | #{board[5]} ",\
+    " #{board[6]} | #{board[7]} | #{board[8]} "]
+    puts "#{rows[0]}\n-----------\n#{rows[1]}\n-----------\n#{rows[2]}"
+
+  end
 
 
 
