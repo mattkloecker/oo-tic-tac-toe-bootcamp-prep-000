@@ -36,7 +36,12 @@ class TicTacToe
     return @board[index] = value
   end
 
-  
+  #check if requested position is taken or empty
+  def position_taken?(board, index)
+    !(board[index].nil? || board[index] == " ")
+  end
+
+
 
 
 
