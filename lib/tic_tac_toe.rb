@@ -70,6 +70,33 @@ def current_player
   end
 end
 
+#check if game has been won
+def won?(board)
+ WIN_COMBINATIONS.each do |win_index| #interates thru list of win combinations array
+
+   x_win = win_index.all? do |spot| #interates thru individual win array
+
+     @board[spot] == "X"
+
+   end
+
+   o_win = win_index.all? do |spot|
+
+    @board[spot] == "O"
+
+   end
+
+        if x_win || o_win
+
+          return win_index
+
+        end
+    end
+  else
+    return false
+end
+
+
 #executes a turn
 def turn
         puts "Please enter 1-9:";
