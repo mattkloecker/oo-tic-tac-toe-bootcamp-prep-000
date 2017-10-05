@@ -63,7 +63,7 @@ end
 
 #check the current player
 def current_player
-  if turn_count(@board)&1==0 || turn_count(@board) == 0;
+  if turn_count&1==0 || turn_count == 0;
     return "X"
   else
     return "O"
