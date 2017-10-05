@@ -50,6 +50,18 @@ def valid_move?(index)
   end
 end
 
+#count number of turns played
+def turn_count
+    counter = 0
+  @board.each do |space|
+    if space == "X" || space == "O";
+      counter += 1;
+    end
+  end
+  counter
+end
+
+
 #executes a turn
 def turn
         puts "Please enter 1-9:";
